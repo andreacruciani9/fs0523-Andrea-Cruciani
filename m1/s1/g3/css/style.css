@@ -1,0 +1,53 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mooli&display=swap');
+
+  .logo-conteiner{
+    text-align: center;
+    padding: 15px;
+}
+.sottolineato{
+    border-top:1px solid yellow;
+    background-color: rgba(231, 231, 184, 0.927);
+    text-align: center;
+    padding: 20px; 
+}
+.conteiner{ 
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.img-cont img{
+    width:100%;
+    border-radius: 20px;
+}
+    
+    .img-cont{
+        margin: 0;  
+}
+    .grey{
+        color: grey;
+        font-size: small;
+        font-family: 'Mooli', sans-serif;
+    }
+ .fautured{
+    padding: 10px;
+    border-left:1px solid orange;
+    text-align: left;
+ }
+
+.fautured p, .fautured h3{
+    margin: 0;
+    padding-left: 0;
+}
+
+.fautured h3{
+    color: orange;
+}
+.font{
+    font-family: 'Roboto', sans-serif;
+}
