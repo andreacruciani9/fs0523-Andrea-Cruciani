@@ -50,4 +50,8 @@
 }
 .font{
     font-family: 'Roboto', sans-serif;
+    text-align: left; 
+}
+#footer{
+    text-align: left;
 }
