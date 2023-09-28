@@ -55,3 +55,11 @@
 #footer{
     text-align: left;
 }
+.font .lineap{
+    border-bottom: 1px solid #000;
+}
+.font.lineac{
+    border-bottom: 1px solid #000;
+}
+
+    
