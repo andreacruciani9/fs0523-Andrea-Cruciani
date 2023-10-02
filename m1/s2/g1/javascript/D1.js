@@ -87,6 +87,6 @@ console.log(x-=4)
  name2= 'Jonh'
 console.log(name1!=name2)
 console.log(name1==name2)
-console.log(name1===name2.toLocaleLowerCase())
+console.log(name1.toLowerCase() === name2.toLowerCase())
 }
 /* SCRIVI QUI LA TUA RISPOSTA */
