@@ -65,7 +65,8 @@ console.log(X)
 */const NAME= 'andrea'
 console.log(NAME)
 /*let NAME='CRUCIANI'
-console.log(NAME)*/
+console.log(NAME)
+Uncaught SyntaxError: Identifier 'NAME' has already been declared (at D1.js:67:5)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
