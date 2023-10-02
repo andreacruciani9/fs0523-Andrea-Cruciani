@@ -72,7 +72,6 @@ console.log(NAME)*/
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 let x=12
-let y= 4
 console.log(x-=4)
 
 
