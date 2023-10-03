@@ -1,7 +1,8 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-let Mag= 10
+{
+  let Mag= 10
 let Min=5
 if(Mag>Min){
   document.write('Maggiore')
@@ -12,7 +13,7 @@ else if(Min>Mag){
   console.log(5)
 
 }
-
+}
 /* oppure
 fuction hightNumber */
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -40,9 +41,24 @@ console.log('divisibileper 5')}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
-*/let fin=4
-let Fin=
+*/
+{
+  let x=4
+let y=8
 
+if(y=8){ 
+  console.log(8)
+}
+y=4
+if(x+y){
+  console.log(8)
+
+}
+y=12
+if (y-x){
+  console.log(8)
+}
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -51,9 +67,10 @@ let Fin=
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+ let saldo= 100
  
-  function (carello){ 
-  totalShoppingCart:100}
+  //function (carello){ 
+  //totalShoppingCart:100}
 
 
 /*if(totalShoppingCart>50)
