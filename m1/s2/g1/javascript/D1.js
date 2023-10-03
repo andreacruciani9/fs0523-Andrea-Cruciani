@@ -40,7 +40,7 @@ Objet= contenitore di proprieta cioe elemeti caratterizzati da un nome e un valo
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
-let name = 'andrea'
+let name = 'luca'
 console.log(name)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -62,9 +62,9 @@ console.log(X)
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
-*/const NAME= 'andrea'
+*/const NAME= 'andre'
 console.log(NAME)
-/*let NAME='CRUCIANI'
+/* NAME.name='CRUCIANI'
 console.log(NAME)
 Uncaught SyntaxError: Identifier 'NAME' has already been declared (at D1.js:67:5)
 /* SCRIVI QUI LA TUA RISPOSTA */
