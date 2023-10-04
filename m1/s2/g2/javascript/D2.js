@@ -41,25 +41,15 @@ console.log('divisibileper 5')}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
-*/
-{
-  let x=4
-let y=8
-
-if(y=8){ 
-  console.log(8)
-}
-y=4
-if(x+y){
-  console.log(8)
-
-}
-y=12
-if (y-x){
-  console.log(8)
+*/{
+function compare(a,b){
+  if(a===8||b===8||a+b===8||a-b===8){
+    return true;
+  }else{
+    return false;
+  }
 }
 }
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
@@ -67,7 +57,16 @@ if (y-x){
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
- let saldo= 100
+// let totalShoppingCart= 100
+ //a=totalShoppingCart
+ //let b=50
+ //function checkout( a,b){
+  //if(a>b){
+    //document.write('spedizione gratuita')
+  //console.log('spedizione gratuita')
+  //}
+ //}
+ 
  
   //function (carello){ 
   //totalShoppingCart:100}
@@ -97,7 +96,7 @@ let numero=1
 let secondo=2
 let terzo=3
 if (numero>secondo>terzo){
-  c
+  console.log('123')
   
   
 }
@@ -152,7 +151,7 @@ const me = {
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-console.log(skills)
+
 delete me.skills
 console.log(me.skills)
 
