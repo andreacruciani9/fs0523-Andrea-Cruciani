@@ -1,1 +1,92 @@
 /* Your styles here */
+body{ text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    
+}
+    .logo{      
+        
+        width: 100%; 
+        height: auto;
+    background-color: rgb(35, 49, 65);
+    background-size: 50px;
+                
+                
+    }
+    
+    
+    .color-lightblue{ display:flex; 
+        padding: auto;
+       text-align: left;
+       font-size: x-large;
+       padding-top: 10px;
+       padding-bottom: 20px;
+       margin-bottom: 40px;
+       color: white;
+        background-color: rgb(28, 38, 57);
+    }
+    .color-lightblue p{padding-left: 30px;}
+    .orange{
+        color: white;
+        font-size: x-large;
+    
+        background-color: rgba(253, 148, 0, 0.993);
+        padding: 10px;
+        padding-left: 20px;
+        padding-right:20px;
+        margin-top: 10px;
+        
+    }
+     #main{ padding-left: 50px;
+            padding-right: 50px;
+            border: 3px solid bisque;
+    }
+    
+    
+    .sfondo1{   color: white;
+        font-size: xx-large;
+                 background-image: url(/assets/images/bg-image.png);
+               padding-bottom: 70px;
+               padding-top:50px;
+               margin-top: 30px;
+    
+            }
+            .flex-box{     
+                        display:flex;
+                        flex-direction: row;
+                         
+                        
+                             
+            }
+
+            .img_1{ border: 6px solid whitesmoke;
+                border-radius: 2px ;  
+                margin: auto;  
+            }
+            
+                
+            .P{text-align: left;
+               font-size: larger;
+               padding-top: 50px;
+               font-weight: bolder;
+               border-top: 2px solid;
+            }
+            .P a{ color:rgb(43, 242, 82);}
+            .P1{
+                font-size: larger;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+            .P1 a{
+                color:rgb(43, 242, 82);
+            }
+        #aside{ margin-top:30px}
+        .color-lightblue2{
+            color: white;
+            background-color: rgb(28, 38, 57);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .color-lightblue2 h4{ text-decoration: underline white;}
+        
