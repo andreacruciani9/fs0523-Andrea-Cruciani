@@ -1,7 +1,7 @@
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
-function area (l1,l2){
+/*function area (l1,l2){
     return l1*l2
  } area(10,20) 
  let risultatoArea = area(10,20)
@@ -13,8 +13,8 @@ function area (l1,l2){
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
  la loro somma moltiplicata per tre.
-*/{
-    function crazySum( a,b){
+*/
+   /* function crazySum( a,b){
         
         
         if (a!=b){
@@ -37,7 +37,7 @@ function area (l1,l2){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
- function crazyDiff (a,b){
+ /*function crazyDiff (a,b){
     return a-b}
     let valore_assoluto= crazyDiff(40-19)
    /* if( valore_assoluto>19){
@@ -49,7 +49,7 @@ function area (l1,l2){
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
-*/ function boundary (){
+*/ /*function boundary (){
     let n=30
     if(n>20 && n<=100){
         console.log (n)
@@ -67,7 +67,14 @@ function area (l1,l2){
  ritornare la stringa originale senza alterarla.
 */
 
-    
+  /*  const epify =  fuction ( stringa) {
+        if(stringa.startWhith('EPICODE')){
+            return stringa
+        }else{
+            return 'epicode'+stringa}
+        } 
+       
+     console.log(stringa)
     
     
 
@@ -76,9 +83,16 @@ function area (l1,l2){
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
-*/function check3and7 (){
-    var numero=18
-}
+*//*function check3and7 (n1){
+    if(n1>0(n%3===0&&n1%7===0)){
+        return true
+    }else{
+        return false
+    }
+    
+    }
+
+console.log(check3and7(20))*/
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
