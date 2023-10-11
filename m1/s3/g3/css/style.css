@@ -1,0 +1,24 @@
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.yuj4AN2DHEq_ySgLoynsqAHaNK?pid=ImgDet&w=474&h=842&rs=1);
+}
+
+#MIA{margin-bottom: 10px;
+    
+     border: 1px solid lawngreen;
+    text-align: center;
+    text-decoration: line-through;
+    color: beige;
+    font-size: 30px;
+    
+}
+
+#myForm{
+    border: 3px solid #000;
+    max-width: 500px;
+    margin-left: 680px;
+    margin-top: 300px;
+     text-align: center;
+     padding-bottom: 50px;
+     padding-top: 50px;
+     background-color: greenyellow;
+}
