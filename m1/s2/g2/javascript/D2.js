@@ -1,30 +1,10 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
-*/
- /*{
-  let Mag= 10
-let Min=5
-if(Mag>Min){
-  document.write('Maggiore')
-  console.log(10)
-}
-else if(Min>Mag){
-  document.write('Maggiore')
-  console.log(5)
-
-}
-}*/
-/* function calcolo(Y,B ){
- if(Y>B){
-  console.log( 'minore')
+*/let x =10
+ if(x>!9){
+  console.log(maggiore)
  }
- else if(Y<B){
-  console.log('maggiore')
- } calcolo( 21,20) 
-} let somma= calcolo(21,20)
-console.log(somma)
- //oppure
-//fuction hightNumber 
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -33,10 +13,8 @@ console.log(somma)
 *
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let not=8
-if(not!=5){
-console.log('not equal')
-}
+
+
 
 
 /* ESERCIZIO 3
