@@ -1,8 +1,11 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */let x =10
- if(x>!20){
-  console.log(x)
+ let y= 6
+ if(x>y){
+  console.log('maggiore')
+ }else{
+  console.log('minore')
  }
 
 
@@ -10,7 +13,11 @@
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
-*
+  
+*/
+if(7!=5){
+  console.log('not equal')
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -19,14 +26,17 @@
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
-*/{
-  let numero=25
-  if(numero%5){
+*/
+  //let numero=25
+  //if(numero%5){
 //let risultato=(25%5) abbreviazionema non e corretto
-console.log('divisibileper 5')}
-}
+//console.log('divisibileper 5')}
+//}
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let e =40
+if(e%5){
+  console.log(e)
+}
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */{
@@ -43,8 +53,19 @@ function compare(a,b){
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
-  Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
-*/
+  Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout. */
+ totalShoppingCart= 60
+ let promozione =50
+ let ship =10
+ if(totalShoppingCart>50){
+  console.log('spedizione'+' '+'gratuita' )
+ }else { console.log ('costo spedizione 10')
+}
+let checkout= 60
+console.log(checkout)
+
+
+
 // let totalShoppingCart= 100
  //a=totalShoppingCart
  //let b=50
@@ -58,14 +79,14 @@ function compare(a,b){
  
   //function (carello){ 
   //totalShoppingCart:100}
-  let totalShoppingCart=65
+  /*let totalShoppingCart=65
   let spedizione =10
   let totale= totalShoppingCart
   if( totalShoppingCart>50){
     console.log('totale da pagare'+totalShoppingCart)
   }else{
     console.log( totalShoppingCart+10)
-  }
+  }*/
 
 
 /*if(totalShoppingCart>50)
@@ -80,7 +101,29 @@ console.log(carello>50)*/
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-let totalShoppingCart2=65
+
+let totalShoppingCart2=60
+let promzione = totalShoppingCart2*0.8
+ship=10
+console.log( promzione)
+
+
+if(promzione<50){
+  console.log( promzione + ship)
+
+}else{
+  console.log('spedizione gratuita')
+}
+
+
+
+
+
+
+
+
+
+/*let totalShoppingCart2=65
  totalShoppingCart2=totalShoppingCart2*0.8
   let shipping=10
   let total =totalShoppingCart2
@@ -89,13 +132,29 @@ if(totalShoppingCart2>50){
 
 }else{ console.log ('spedizione a pagamento' +'  '+ shipping)}
 
-/* SCRIVI QUI LA TUA RISPOSTA */console.log( 'totale da pagare'+'  '+totalShoppingCart2)
+/* SCRIVI QUI LA TUA RISPOSTA *//*console.log( 'totale da pagare'+'  '+totalShoppingCart2)/*
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
-*/let ab =3
+*/
+/*{
+  let a=4
+  let b=6
+  let c=7
+  if(a<b||b<c||c>a||c>b){
+   
+  }
+  console.log(t)
+}*/
+
+
+
+
+
+
+/*let ab =3
   let cd=6
   let ef=9
   if(ab<cd&&cd<ef){
@@ -112,7 +171,26 @@ if(totalShoppingCart2>50){
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
-*/let lettera ='andrea'
+*/
+
+let a=4
+console.log(typeof(a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let lettera ='andrea'
 if(typeof lettera===Number){
   console.log('lettera e un numero')
 
@@ -133,15 +211,15 @@ else {console.log('lettera e una parola') }
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
+  */let val = 7
+  if (val < 5) {
       console.log("Meno di 5");
+    } else if (val < 10) {
+      console.log("Meno di 10");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -161,15 +239,15 @@ const me = {
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-
+ delete me.lastName
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-delete me.skills
-console.log(me.skills)
+ me.skills.pop()
+ console.log(me.skills)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
