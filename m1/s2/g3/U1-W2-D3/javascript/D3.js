@@ -1,4 +1,4 @@
-const starWarsCharacters = [
+const starWarsCharacter = [
   {
     name: "Luke Skywalker",
     height: 172,
@@ -104,7 +104,7 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
-let characters=[];
+let character=[];
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "characters" creato precedentemente.
@@ -117,19 +117,27 @@ for(let i =0;i<starWarsCharacters.length;i++){
    let personaggioCorrente=starWarsCharacters[i];
    characters.push(personaggioCorrente.name)
    console.log(characters)
-}*/let personaggi=starWarsCharacters
-   for(let i=0; i<starWarsCharacters.length;i++){
-    characters.push(starWarsCharacters[i].name)
-    console.log(characters)
-   }
+}*/
 
-/*for(let i=0;i<starWarsCharacters.length;++i){
-  characters.push(starWarsCharacters[i].name)
-}
-console.log(characters)
 
-console.log(starWarsCharacters)
-let famaleCharter=[]
+for(i=0;i<starWarsCharacter;i++)
+let pers =starWarsCharacter[i]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
@@ -138,7 +146,7 @@ if(starWarsCharacters[i].gender==='female'){
   femaleCharater.pusc(starWarsCharacters[i])
 }
 console.log(femaleCharater)
-*/ femaleCharacters= []
+*/ /*femaleCharacters= []
  for(let i=0;i<starWarsCharacters.length;i++){
   if(starWarsCharacters[i]==='female'){
      femaleCharacters.push( starWarsCharacters[i])
