@@ -1,26 +1,34 @@
 
-let form = document.querySelector("#myForm")
-let formButton= document.querySelector("#submitButton")
- formButton.addEventListener( 'click',function(e){
-    e.preventDefault()
-    let text=form.querySelector('[name="text"]')
- let valoretext= text.value
- console.log (valoretext)
-let testo= document.getElementById("MIA")
-let p=document.createElement("p")
-p.innerText=valoretext
-let=elimina=document.createElement('button')
- elimina.innerTexte='elimina'
- p.append(elimina)
- testo.append(p)
-
-if(text.value){
-    text.style.textDecoration="overline"
+let inputButton=document.getElementById('submitButton')
+let lista =document.getElementById('lista')
+ inputButton.addEventListener("click",function(){
+    let testo=document.getElementById('text');
+    if(!testo.value){
+        alert('minchia')
+        
+    }
     
-}else{ text.style=""}
-}) 
 
-let frase= document.querySelector("#conferm")
-frase.addEventListener('click')
-    let f= document.createElement("p")
-    p.innerText='confermato'
+let li=document.createElement('li')
+li.innerText= text.value+'  '+'confermato';
+let elimina= document.createElement('button')
+elimina.innerText='elimina';
+elimina.addEventListener('click',function(){
+   li.remove();
+})
+
+
+
+    li.style.textDecoracion="line-trought";
+
+li.append(elimina);
+lista.prepend(li);
+testo.value='';
+ 
+
+
+
+
+
+
+})
