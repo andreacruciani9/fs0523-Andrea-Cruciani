@@ -46,9 +46,8 @@ console.log(name)
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
-*/let somma1= 20
-let somma2= 12
-console.log(somma1+somma2)
+*/let somma1= 20+20
+console.log(somma1)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -62,8 +61,12 @@ console.log(X)
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
-*/const NAME= 'andre'
-console.log(NAME)
+*/let cane = 4
+ cane= 5
+ console.log(cane)
+ /*const gatto= 4
+ gatto=4
+ console.log(gatto)*/
 /* NAME.name='CRUCIANI'
 console.log(NAME)
 Uncaught SyntaxError: Identifier 'NAME' has already been declared (at D1.js:67:5)
@@ -71,9 +74,9 @@ Uncaught SyntaxError: Identifier 'NAME' has already been declared (at D1.js:67:5
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
-*/
-let x=12
-console.log(x-=4)
+*/ let elefante =` ${X}-4`
+console.log( X-4)
+
 
 
 
@@ -83,11 +86,8 @@ console.log(x-=4)
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
-*/let name1,name2
-{ name1='jonh'
- name2= 'Jonh'
-console.log(name1!=name2)
-console.log(name1==name2)
-console.log(name1.toLowerCase() === name2.toLowerCase())
-}
+*/
 /* SCRIVI QUI LA TUA RISPOSTA */
+let name1 ='jonh'
+let name2 = 'JONH'
+console.log(name1==name2.toLocaleLowerCase())

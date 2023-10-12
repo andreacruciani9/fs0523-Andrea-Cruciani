@@ -1,8 +1,8 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */let x =10
- if(x>!9){
-  console.log(maggiore)
+ if(x>!20){
+  console.log(x)
  }
 
 
