@@ -281,14 +281,17 @@ function deleteProp(){}
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
   //da finire
-*/  function newestMovie(){
+*/ /* function newestMovie(){
   for(i=0; i<movies.length;ì++){
   let filmPrima=movies[i]
   
-}}
-
-
- 
+  console.log( filmPrima)
+}} newestMovie()
+*/
+  function newestMovie(){
+   return movies.reduce((c,p)=>c.Year>p.Year? c:p)
+  }
+  console.log(newestMovie())
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */ function countMovies(){
