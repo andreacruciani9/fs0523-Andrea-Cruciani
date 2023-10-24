@@ -64,10 +64,12 @@ main {
 }
 .linea {
       position: relative;
-      top: -20px;
-      left: 43px;
+      top: -31px;
+      left: -16px;
       border: none;
+      z-index: 3;
 }
+
 .flot {
       float: left;
 }
