@@ -1,0 +1,54 @@
+@media screen and (min-width: 576px) {
+      header nav ul li {
+            /*display: flex; flex grow dimensioni in proprorzione i blocchi 1 flax basis 60 40 e dentro */
+            display: inline-block;
+            margin: 0 10px;
+      }
+      .grassetto {
+            font-weight: bold;
+      }
+      .centrata {
+            margin: 0 auto;
+      }
+}
+@media screen and (min-width: 769px) {
+      /*header*/
+      header {
+            padding: 1em 1.5em;
+      }
+      .Logo_area img,
+      .Logo_area p {
+            margin: 0;
+      }
+
+      .Logo_area img,
+      .Logo_area p,
+      .Logo_area,
+      .ahah {
+            display: inline-block;
+            vertical-align: middle;
+      }
+      .Logo_area {
+            width: 59%;
+            text-align: left;
+      }
+      .ahah {
+            width: 40%;
+            text-align: right;
+      }
+      .centrata {
+            width: 80%;
+      }
+      .vidi,
+      .novita {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(50%-0.4rem);
+      }
+      .flex {
+            display: flex;
+      }
+      .flex > div {
+            flex: 1 1 calc(100% / 3);
+      }
+}
