@@ -206,7 +206,9 @@ button {
       color: white;
       font-weight: bold;
 }
-#tag {
+#f1,
+#f2,
+#f3 {
       position: absolute;
       color: #009ec62a;
       border: 1px solid #dddddd;
