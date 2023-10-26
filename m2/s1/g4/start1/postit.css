@@ -1,0 +1,41 @@
+#containter {
+      margin: 20px;
+      font-family: fantasy;
+      background: #666;
+      color: #fff;
+}
+* {
+      margin: 0;
+      padding: 0;
+}
+/*stile  contenuto post-it*/
+.title {
+      font-weight: bold;
+      font-size: 2rem;
+}
+.content-flex,
+.postitwhite,
+.postitor,
+.postitgre,
+.postitye {
+      list-style: none;
+
+      margin: 1em;
+}
+.content-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+.content-flex .postitwhite .postitor .postitgre .postitye a {
+      text-decoration: none;
+      color: black;
+      background: #ffc;
+      display: block;
+      height: 10em;
+      width: 10em;
+      padding: 1em;
+      box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+      transform: rotate(-6deg);
+      transition: trasform.15s linear;
+}
