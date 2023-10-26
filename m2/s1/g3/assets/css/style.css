@@ -139,3 +139,32 @@ a {
       flex-shrink: 2;
       background-color: #f3df85;
 }
+h2 {
+      color: #612406;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+}
+.box2 {
+      box-sizing: content-box;
+      background: #f3df85;
+}
+.text {
+      color: #612406;
+      font-size: large;
+      font-weight: bold;
+      padding-left: 15px;
+}
+.text2 {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      color: #612406;
+      padding-left: 15px;
+      background-color: #f3df85;
+}
+.im img {
+      width: 100%;
+      border-radius: 0%;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+}
