@@ -180,17 +180,17 @@
 }
 
 @media screen and(min-width:1200px) {
-}
-.box {
-      display: flex;
-}
-#header {
-      box-sizing: border-box;
-}
-.ul-flex {
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-      gap: 120px;
-      width: 100%;
+      .box {
+            display: flex;
+      }
+      #header {
+            box-sizing: border-box;
+      }
+      .ul-flex {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            gap: 120px;
+            width: 100%;
+      }
 }
