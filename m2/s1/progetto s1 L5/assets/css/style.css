@@ -1,0 +1,205 @@
+/*header/nav*/
+header::after {
+      background-color: white;
+}
+nav {
+      background-color: #ffc017;
+}
+#navflex img {
+      padding-left: 30px;
+}
+#navflex {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1000px;
+      justify-content: space-between;
+      justify-content: left;
+      gap: 100px;
+}
+.ulflex {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 40px;
+      list-style-type: none;
+}
+
+li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: black;
+}
+
+.bot {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      font-size: 1.2rem;
+      border-radius: 70px;
+}
+
+/*conteiner h1*/
+.conteinerh1 {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      background-color: #ffc017;
+      padding-top: 90px;
+      padding-bottom: 110px;
+}
+h1 {
+      font-size: 3rem;
+      position: absolute;
+      left: 30px;
+      top: 110px;
+}
+.pi {
+      position: relative;
+      left: 30px;
+      top: 20px;
+      font-size: 20px;
+}
+.display {
+      display: block;
+}
+button {
+      position: relative;
+      left: 30px;
+      top: 50px;
+      border-radius: 70px;
+      background-color: black;
+      color: white;
+      padding: 8px 35px;
+      font-size: larger;
+}
+button:hover {
+      background-color: darksalmon;
+}
+/*main*/
+main {
+      width: 1400px;
+
+      padding-left: 40px;
+      padding-right: 40px;
+}
+.inline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+.trading {
+      font-size: 1.3rem;
+      font-weight: bold;
+}
+.conteinerBox {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 65px;
+      border-bottom: 0.5px solid #00000033;
+}
+.mainflex {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+
+      gap: 31px;
+      list-style-type: none;
+
+      margin: 20px auto;
+}
+
+.pt2 {
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      gap: 40px;
+}
+.li4 {
+      position: relative;
+
+      top: 18px;
+}
+
+.li5 {
+      position: relative;
+      top: 25px;
+}
+.li6 {
+      position: relative;
+
+      top: 20px;
+      left: 56px;
+}
+.number {
+      opacity: 0.3;
+      font-size: 3rem;
+}
+.text {
+      display: block;
+}
+.t1 {
+      font-weight: bold;
+}
+.t2 {
+      font-weight: bold;
+}
+.t3 {
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.377);
+      padding-top: 10px;
+}
+/*parte finale*/
+.box3 {
+      display: flex;
+      width: 100%;
+}
+aside {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 49%;
+      padding-left: 30px;
+}
+.p1 {
+      display: flex;
+      align-items: center;
+      gap: 49px;
+}
+.radius {
+      border-radius: 20px;
+      border: 1pxsolid;
+}
+.divflex {
+      width: 500px;
+      height: 60%;
+      display: flex;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+      gap: 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.358);
+}
+.divflex .border {
+      text-decoration: none;
+      color: black;
+      border: 1px solid grey;
+      background-color: rgb(190, 189, 189);
+      border-radius: 30%;
+      font-size: 1rem;
+      padding: 10px 2px;
+      padding: 15px;
+}
+.green {
+      color: green;
+      text-decoration: none;
+}
+.divfooter a {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+}
+.divfooter {
+      display: flex;
+}
