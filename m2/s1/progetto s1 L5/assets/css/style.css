@@ -166,8 +166,11 @@ aside {
       gap: 49px;
 }
 .radius {
-      border-radius: 20px;
-      border: 1pxsolid;
+      background-color: #f2f2f2;
+      color: black;
+      padding: 4px;
+      border-radius: 40%;
+      border: 1px solid #f2f2f2;
 }
 .divflex {
       width: 500px;
@@ -178,18 +181,18 @@ aside {
       flex-wrap: wrap;
       align-content: center;
       justify-content: space-evenly;
-      gap: 14px;
+      gap: 31px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.358);
 }
 .divflex .border {
       text-decoration: none;
       color: black;
-      border: 1px solid grey;
-      background-color: rgb(190, 189, 189);
-      border-radius: 30%;
+      border: 1px solid #f2f2f2;
+      background-color: #f2f2f2;
+      border-radius: 40%;
       font-size: 1rem;
       padding: 10px 2px;
-      padding: 15px;
+      padding: 20px;
 }
 .green {
       color: green;
@@ -197,9 +200,21 @@ aside {
 }
 .divfooter a {
       text-decoration: none;
-      color: black;
+      color: #dbdbdb;
       padding: 10px;
+      padding-top: 20px;
+      padding-left: 10px;
 }
 .divfooter {
+      height: auto;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 373px;
+}
+.testo {
+      font-size: 1.2rem;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 20px;
 }
