@@ -12,7 +12,7 @@
       </head>
       <body>
             <div>
-                  <header>
+                  <header id="headersticky">
                         <nav>
                               <div id="navflex">
                                     <img
@@ -20,9 +20,14 @@
                                           width="100px"
                                           height="70px"
                                     />
+
                                     <ul class="ulflex">
-                                          <li><a href="#">Our Story</a></li>
-                                          <li><a href="#">Memebership</a></li>
+                                          <li>
+                                                <a href="#">Our Story</a>
+                                          </li>
+                                          <li>
+                                                <a href="#">Memebership</a>
+                                          </li>
                                           <li><a href="#">write</a></li>
                                           <li><a href="#">Sing In</a></li>
                                           <li>
@@ -61,13 +66,26 @@
                                     <div class="div01">
                                           <li class="lii">
                                                 <span class="number">01</span>
-                                                <a href="#">
+                                                <a class="spr" href="#">
                                                       <img
                                                             src="./assets/imgs/image01.jpeg"
                                                             alt="imagine"
-                                                      /><span class="t2"
-                                                            >Isaac Saul</span
-                                                      >
+                                                      /><span class="t2">
+                                                            >Isaac Saul
+                                                      </span>
+                                                      <div id="popup">
+                                                            <p>
+                                                                  Isaac e uno
+                                                                  studente di
+                                                                  medicina
+
+                                                                  <button
+                                                                        id="button"
+                                                                  >
+                                                                        follow
+                                                                  </button>
+                                                            </p>
+                                                      </div>
                                                       <p class="t1">
                                                             Apersonal,non-partisan
                                                             perspective on
@@ -228,31 +246,29 @@
                   <div class="box3">
                         <aside>
                               <article>
-                                    <div>
+                                    <div class="bC">
                                           <img
+                                                class="logo"
                                                 src="./assets/imgs/image04.png"
                                                 alt=""
                                           />
                                           <span>Caroline Mellor </span>
 
-                                          <p class="text1">
-                                                How minght we build trust in an
-                                                untrusting World?
-
-                                                <span class="text2">
-                                                      Considerind the clallenge
-                                                      of polarization in digital
-                                                      societies
-                                                </span>
-                                                <span class="t3">
+                                          <div>
+                                                <p class="text1">
+                                                      How minght we build trust
+                                                      in an untrusting World?
+                                                </p>
+                                                <p class="t3">
                                                       Oct22 - 10 min read -
                                                       <span class="radius"
                                                             >Polarization</span
                                                       >
-                                                </span>
-                                          </p>
+                                                </p>
+                                          </div>
 
                                           <img
+                                                class="foto"
                                                 src="./assets/imgs/image18.jpeg"
                                                 alt=""
                                                 width="150px"
@@ -262,8 +278,9 @@
                               </article>
 
                               <article>
-                                    <div>
+                                    <div class="bR">
                                           <img
+                                                class="logo"
                                                 src="./assets/imgs/image02.png"
                                                 alt=""
                                           />
@@ -272,37 +289,35 @@
                                           <p class="text1">
                                                 How minght we build trust in an
                                                 untrusting World?
-                                                <span class="text2">
-                                                      Considerind the clallenge
-                                                      of polarization in digital
-                                                      societies
+                                          </p>
+                                          <p class="t3">
+                                                Oct22 - 10 min read -
+                                                <span class="radius">
+                                                      Music
                                                 </span>
-                                                <span class="t3">
-                                                      Oct22 - 10 min read -
-                                                      <span class="radius">
-                                                            Music
-                                                      </span>
-                                                </span>
+
                                                 <img
+                                                      class="logo"
                                                       src="./assets/imgs/svg/star.svg"
                                                       alt=""
                                                       width="9px"
                                                       height="14px"
                                                 />
                                           </p>
-                                          <div>
-                                                <img
-                                                      src="./assets/imgs/image16.jpg"
-                                                      alt=""
-                                                      width="150px"
-                                                      height="100px"
-                                                />
-                                          </div>
+
+                                          <img
+                                                class="foto"
+                                                src="./assets/imgs/image16.jpg"
+                                                alt=""
+                                                width="150px"
+                                                height="100px"
+                                          />
                                     </div>
                               </article>
                               <article>
-                                    <div>
+                                    <div class="bR">
                                           <img
+                                                class="logo"
                                                 src="./assets/imgs/image19.jpeg"
                                                 alt=""
                                           />
@@ -311,22 +326,18 @@
                                           <p class="text1">
                                                 How minght we build trust in an
                                                 untrusting World?
-
-                                                <span class="text2">
-                                                      Considerind the clallenge
-                                                      of polarization in digital
-                                                      societies</span
-                                                >
-
-                                                <span class="t3">
-                                                      Oct22 - 10 min read -
-                                                      <span class="radius"
-                                                            >Poetry</span
-                                                      >
-                                                </span>
                                           </p>
-                                          <div>
+
+                                          <p class="t3">
+                                                Oct22 - 10 min read -
+                                                <span class="radius"
+                                                      >Poetry</span
+                                                >
+                                          </p>
+
+                                          <div class="positionRelative">
                                                 <img
+                                                      class="foto"
                                                       src="./assets/imgs/image08.jpeg"
                                                       alt=""
                                                       width="150px"
@@ -354,9 +365,11 @@
                                     >
                                     <a class="border" href="#">Productivity</a>
                                     <a class="border" href="#">Politics</a>
-                                    <a class="green" href="#"
-                                          >See more topics</a
-                                    >
+                                    <div>
+                                          <a class="green" href="#"
+                                                ><p>See more topics</p></a
+                                          >
+                                    </div>
                               </div>
                               <footer>
                                     <div class="divfooter">
@@ -374,5 +387,6 @@
                         </div>
                   </div>
             </div>
+            <script src="./popup.js/popup.js"></script>
       </body>
 </html>

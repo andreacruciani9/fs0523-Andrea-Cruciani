@@ -1,0 +1,7 @@
+.conteinerBox {
+      margin: 10px 30px;
+}
+.mainflex {
+      display: flex;
+      flex-wrap: wrap;
+}

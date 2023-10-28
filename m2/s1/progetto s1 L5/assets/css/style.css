@@ -1,10 +1,12 @@
 /*header/nav*/
-header::after {
+#header {
+      position: fixed;
       background-color: white;
 }
 nav {
       background-color: #ffc017;
 }
+
 #navflex img {
       padding-left: 30px;
 }
@@ -15,7 +17,7 @@ nav {
       gap: 1000px;
       justify-content: space-between;
       justify-content: left;
-      gap: 100px;
+      gap: 200px;
 }
 .ulflex {
       display: flex;
@@ -96,6 +98,7 @@ main {
       display: flex;
       align-items: normal;
       height: 400px;
+      max-width: 1000px;
 }
 .mainflex {
       display: flex;
@@ -108,6 +111,33 @@ main {
       opacity: 0.3;
       font-size: 4rem;
 }
+#popup {
+      height: 80px;
+      width: 130px;
+      font-size: 12px;
+      border: 1px solid black;
+      position: relative;
+      bottom: 120px;
+      left: 80px;
+      z-index: 1;
+      background-color: white;
+      font-weight: bold;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.301);
+      display: none;
+}
+
+#button {
+      width: 40px;
+      height: 5px;
+      font-size: 0.6rem;
+      padding-left: 2px;
+      padding-right: 6px;
+
+      padding-bottom: 8px;
+      background-color: green;
+      position: relative;
+}
 .div01 {
       flex-basis: 33%;
 }
@@ -115,7 +145,7 @@ main {
       flex-basis: 29%;
 }
 .div03 {
-      flex-basis: 15%;
+      flex-basis: 34%;
 }
 .div04 {
       flex-basis: 32%;
@@ -126,19 +156,23 @@ main {
       flex-shrink: 2;
 }
 .div6 {
-      flex-basis: 34%;
+      flex-basis: 29%;
 }
 .mainflex li img {
       width: 17px;
+      border-radius: 100%;
 }
 .text {
       display: block;
 }
+.t1 {
+      font-weight: bold;
+}
 
 /*parte finale*/ /* usa position absolute /position relative sulle 3 foto link*/
-.box3 {
+/*.box3 {
       display: flex;
-      width: 100%;
+      max-width: 1290px;
 }
 aside {
       display: flex;
@@ -156,10 +190,52 @@ aside {
       color: black;
       padding: 4px;
       border-radius: 40%;
-      border: 1px solid #f2f2f2;
+      border: 1px solid #f2f2f2;*/
+.box3 {
+      display: flex;
+      padding-top: 75px;
+      border-top: 1px solid rgba(0, 0, 0, 0.269);
+}
+aside {
+      width: 55%;
+}
+.logo {
+      border-radius: 100%;
+      width: 17px;
+}
+.bC {
+      position: absolute;
+      padding-left: 8px;
+}
+.text1 {
+      font-weight: bold;
+      padding-top: 11px;
+}
+
+.t3 {
+      display: block;
+      padding-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      opacity: 0.5;
+}
+.foto {
+      position: relative;
+      left: 357px;
+      bottom: 80px;
+}
+.bR {
+      position: relative;
+      top: 160px;
+      padding-left: 10px;
+}
+.foto {
+      position: relative left 357px;
+      bottom: 80px;
 }
 .divflex {
-      width: 500px;
+      max-width: 434px;
+      height: 50%;
       height: 60%;
       display: flex;
 
@@ -167,7 +243,7 @@ aside {
       flex-wrap: wrap;
       align-content: center;
       justify-content: space-evenly;
-      gap: 31px;
+      gap: 9px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.358);
 }
 .divflex .border {
@@ -183,6 +259,7 @@ aside {
 .green {
       color: green;
       text-decoration: none;
+      padding-bottom: 30px;
 }
 .divfooter a {
       text-decoration: none;
@@ -201,6 +278,6 @@ aside {
 .testo {
       font-size: 1.2rem;
       padding-left: 30px;
-      padding-top: 10px;
-      padding-bottom: 20px;
+      font-weight: bold;
+      padding-bottom: 40px;
 }
