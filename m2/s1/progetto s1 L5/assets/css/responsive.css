@@ -1,0 +1,24 @@
+@media screen and(min-width:560px) {
+      #navflex .ulflex .li1 a,
+      .li2 a.li3 a,
+      .li5 a {
+            display: none;
+      }
+      .li4 {
+            position: absolute;
+
+            left: 150px;
+      }
+      main {
+            padding-left: 11px;
+            width: 1400px;
+      }
+      .conteinerBox {
+            display: flex;
+            max-width: 1000px;
+      }
+      .mainflex {
+            list-style-type: none;
+            flex-basis: 33%;
+      }
+}
