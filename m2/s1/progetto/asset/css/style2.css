@@ -1,6 +1,6 @@
 /*header/nav*/
 #header {
-      position: fixed;
+      position: sticky;
       background-color: white;
 }
 nav {
