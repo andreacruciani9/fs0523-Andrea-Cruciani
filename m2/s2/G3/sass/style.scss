@@ -1,0 +1,10 @@
+@import "_reset";
+@import "colori";
+@import "spaziature";
+.container-fluid {
+      background-color: $colore;
+}
+.logo {
+      height: $spazio-logo;
+      width: $spazio-logo;
+}
