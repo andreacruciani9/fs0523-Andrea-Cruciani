@@ -2,9 +2,12 @@
 @import "colori";
 @import "spaziature";
 .container-fluid {
-      background-color: $colore;
+      background-color: map-get($colore, primary);
 }
 .logo {
       height: $spazio-logo;
       width: $spazio-logo;
+}
+.container {
+      background-color: map-get($colore, primary);
 }
