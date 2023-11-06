@@ -1,6 +1,7 @@
 @import "_reset";
 @import "colori";
 @import "spaziature";
+@import "bottoni";
 .container-fluid {
       background-color: map-get($colore, primary);
 }
@@ -9,5 +10,6 @@
       width: $spazio-logo;
 }
 .container {
-      background-color: map-get($colore, primary);
+      background: map-get($colore, primary);
+      height: nth($bottone-per, 3);
 }

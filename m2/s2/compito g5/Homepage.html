@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+            <link rel="stylesheet" href="./asset/css/reset.css" />
+            <link rel="stylesheet" href="./asset/css/style.css" />
+            <link
+                  rel="stylesheet"
+                  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+            />
+            <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                  crossorigin="anonymous"
+            />
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+      </head>
+      <body id="body">
+            <header id="header">
+                  <nav class="navbar navbar-expand-md">
+                        <img
+                              class="navbar-brand"
+                              src="./asset/img/logo2.jpg"
+                              width="150px"
+                              height="100px"
+                              alt="logo"
+                        />
+                        <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent"
+                              aria-controls="navbarSupportedContent"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                        >
+                              <span
+                                    id="white"
+                                    class="navbar-toggler-icon text-white"
+                              ></span>
+                        </button>
+                        <div
+                              class="collapse navbar-collapse"
+                              id="navbarSupportedContent"
+                        >
+                              <ul
+                                    class="row-md-1 navbar-nav me-auto mb-2 mb-lg-0"
+                              >
+                                    <li class="col-2 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                >Home</a
+                                          >
+                                    </li>
+
+                                    <li class="col-2 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                >Tv Shows</a
+                                          >
+                                    </li>
+
+                                    <li class="col nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                          >
+                                                Movies</a
+                                          >
+                                    </li>
+
+                                    <li class="col-3 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                >Recently Added</a
+                                          >
+                                    </li>
+
+                                    <li class="col-md-3 col-lg-6 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                >My List
+                                          </a>
+                                    </li>
+
+                                    <li class="col col-xl-1 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                ><i class="bi bi-search"></i
+                                          ></a>
+                                    </li>
+                                    <li class="col col-xl-1 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                >kids</a
+                                          >
+                                    </li>
+                                    <li class="col col-xl-1 nav-item">
+                                          <a
+                                                class="nav-link text-white"
+                                                href="#"
+                                                ><i class="bi bi-bell"></i
+                                          ></a>
+                                    </li>
+
+                                    <li class="col-md-6 col-lg col-xl nav-item">
+                                          <a
+                                                class="nav-link active text-white"
+                                                aria-current="page"
+                                                href="#"
+                                                ><img
+                                                      src="./asset/img/logo-utente.jpg"
+                                                      width="40px"
+                                                      alt="logo"
+                                          /></a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </nav>
+            </header>
+            <main>
+                  <div class="row">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                              <h3 class="text-white">TV Shows</h3>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-6">
+                              <div class="dropdown">
+                                    <button
+                                          id="but"
+                                          class="btn btn-secondary dropdown-toggle"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                    >
+                                          Genres
+                                    </button>
+                                    <ul id="menu" class="dropdown-menu">
+                                          <li>
+                                                <button
+                                                      class="dropdown-item"
+                                                      type="button"
+                                                >
+                                                      Action
+                                                </button>
+                                          </li>
+                                          <li>
+                                                <button
+                                                      class="dropdown-item"
+                                                      type="button"
+                                                >
+                                                      Another action
+                                                </button>
+                                          </li>
+                                          <li>
+                                                <button
+                                                      class="dropdown-item"
+                                                      type="button"
+                                                >
+                                                      Something else here
+                                                </button>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div class="col col-sm-3 col-md-2 col-lg-3 col-xl-1">
+                              <a href="#">
+                                    <i id="icona" class="bi bi-grid text-white"
+                                          ><i
+                                                class="bi bi-filter-left text-white"
+                                          ></i
+                                    ></i>
+                              </a>
+                        </div>
+                  </div>
+                  <h3 class="text">Trading Now</h3>
+
+                  <section class="animate__animated animate__slideInRight">
+                        <div id="mowrap1" class="row no-gutters">
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <a href="#">
+                                          <img
+                                                src="./asset/img/foto1.jpg"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                    /></a>
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <a href="#">
+                                          <img
+                                                src="./asset/img/foto2n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                    /></a>
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <a href="#">
+                                          <img
+                                                src="./asset/img/foto3n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                    /></a>
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto4n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto5n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto6n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                        </div>
+                  </section>
+                  <h3 class="text">Watch It Again</h3>
+                  <section class="">
+                        <div class="row no-gutters">
+                              <div id="mowrap2" class="row">
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto7n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto19n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto9n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto10n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto11n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                                    <div
+                                          class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                                    >
+                                          <img
+                                                src="./asset/img/foto12n.png"
+                                                width="230px"
+                                                height="150px"
+                                                alt=""
+                                          />
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+                  <h3 class="text">New Relases</h3>
+                  <section class="">
+                        <div id="mowrap" class="row no-gutters row-lg-flex-row">
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto13n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto14n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto15n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto16n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto17n.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                              <div
+                                    class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl animate__animated animate__slideInRight"
+                              >
+                                    <img
+                                          src="./asset/img/foto18.png"
+                                          width="230px"
+                                          height="150px"
+                                          alt=""
+                                    />
+                              </div>
+                        </div>
+                  </section>
+            </main>
+            <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                  crossorigin="anonymous"
+            ></script>
+      </body>
+</html>
