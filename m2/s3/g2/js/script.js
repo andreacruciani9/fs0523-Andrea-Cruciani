@@ -25,26 +25,20 @@ formButton.addEventListener('click', function(){
     localStorage.remuveItem('nome')
 });*/
 
-formButton.addEventListener("click", function (e) {
+saveButton.addEventListener("click", function (e) {
       e.prevetdefault();
+      let nomeField = document.querySelector("#nome");
 
-      let valid = true;
       if (!nome.value) {
             nome.style.border = " 1px solid red";
             nome.nextElementSibling.innerText = "compila questo campo";
             valid = false;
       } else {
-            formButton.addEventListener("click", function () {
-                  localStorage.remuveItem("nome");
-                  saveButton.addEventListener("click", function (arr) {
-                        let nomeField = document.querySelector("#nome");
-                        nomeField.value.innerText = "";
-                        arr.push(nomeField.value.nome);
+            localStorage.setItem("nome", nomeField.value);
+            nomeField.value = "";
 
-                        localStorage.setItem("nome", nomeField.value);
-                        previusVal.innerText = nome;
-                  });
-            });
+            localStorage.getItem("nome", nomeField.value);
+            previusVal.innerText = nome;
       }
 });
 /*
