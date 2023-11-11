@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <script>
+                  //local storage chiudo il braswer lo riapro il valore rimane salvato
+                  localStorage.setItem("nome", "michele"); //salvare qualcosa in localstorage
+                  localStorage.setItem("nome", "gabriele"); //cambio valore
+
+                  let nome = localStorage.getItem("nome"); //prima lo salvo e cosi lo prendo
+                  console.log(nome); //cosi verifico che tutto va bene se non salvo il dato mi da null
+                  if (nome) {
+                        console.log(nome); //se il nome esiste me lo tiri fuori in console,e controllo se esiste
+                  }
+                  //sessionstorage se chiudo la navigazione il dato viene eliminato
+                  sessionStorage.setItem("nome", "michele"); //salvare qualcosa in sessionstorage
+                  sessionStorage.setItem("nome", "gabriele"); //cambio valore
+                  let nome2 = sessionStorage.getItem("nome"); //recupero il valore
+                  if (nome2) {
+                        console.log(nome2);
+                  }
+
+                  //come salvare tanti dati
+            </script>
+      </body>
+</html>

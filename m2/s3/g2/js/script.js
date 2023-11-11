@@ -36,8 +36,11 @@ formButton.addEventListener("click", function (e) {
       } else {
             formButton.addEventListener("click", function () {
                   localStorage.remuveItem("nome");
-                  saveButton.addEventListener("click", function () {
+                  saveButton.addEventListener("click", function (arr) {
                         let nomeField = document.querySelector("#nome");
+                        nomeField.value.innerText = "";
+                        arr.push(nomeField.value.nome);
+
                         localStorage.setItem("nome", nomeField.value);
                         previusVal.innerText = nome;
                   });

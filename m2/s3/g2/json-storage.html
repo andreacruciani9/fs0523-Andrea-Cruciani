@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <script>
+                  //salvare tanti arrey o oggetti(tanti dati)
+                  let userrr = [
+                        {
+                              nome: "Mario",
+                              cognome: "Rossi",
+                              anni: 30,
+                        },
+                        {
+                              nome: "Maria",
+                              cognome: "Rossi",
+                              anni: 38,
+                        },
+                  ];
+                  //localstorage e session strorage ammette solo ede esclusivamente stringhe
+                  //quindi se voglio salvare arrey o oggetti devo convertirli prima in stringa
+                  // quindi procedo con la conversioone in JSON usando JSON.stingfy( userArr)  in questo caso uso userArr perche e l arrey da convertire
+                  let userrArrJson = JSON.stringify(userArr);
+
+                  console.log(typeof userrArrJson);
+
+                  localStorage.setItem("utenti", userArrJson);
+                  //per recuperare il dato
+
+                  let stringaUtentiSsorage = localStorage.getItem("uenti"); //,i vai a recuperare gli utenti che ho salvato poco fa in stringhe
+                  //cosi salvo nella variabile il contenuto di utenti in stringhe dentro una variabile e per poterli lavorare riconverto i dati utente in arrey di oggetti usando il metodo JSON.parse(stringUtentiStorage)
+
+                  let userArrStotage = JSON.parse(stringaUtentiSsorage);
+                  console.log(userArrStotage); // verificheremo che è un oggetto
+                  //per rimuovere tutti gli elrmenti
+                  localStorage.removeItem("nome");
+                  sessionStorage.removeItem("nome");
+                  //allora la procedura piu gista sara:
+                  //let pippo=localstorage.getItem(franco)
+                  // trasformi in oggeto
+                  //let pluto = JSON.parse(pippo)
+                  // usi i metodi di js per rimuovere un oggetto da un arrey con filter o splice che ti rida un arrey nuovo
+                  //let minni = pluto.spice(non ricordo)
+                  //e quell arrey nuovo lo converti in stringa
+                  // topolino = JSON.stringify(minni)
+                  // e topolino lo salvo nel local storage
+                  //localStorage.getItem(topolino)
+
+                  //salva(userArr)
+                  //per il compito con i form( che restituiscono un valore da pushare  un arr di oggetti)
+                  //fuction salva(array){
+                  //stingaJson = JSON.stringfy('userArr') converto l arrey in stringa
+                  //localStorage.setItem("userArr",stringaJson) e tutti insieme me li salva            //prendo tutti gli utenti dal local storage, ne elimino un quindi vado a prendere l'oggetto trasformato in stringa
+                  //}
+                  // let ciao =localstorage.getItem('useArr') lo prendo dal local storage e me lo srestituisce in una stringa percio adesso lo devo convertire
+                  // let covertire= JSON.parse(ciao) qui ho l'arrey
+                  //qua elimino
+                  //let risultato=covertire.filter(u=>u.id!=2) gli sto dicendo di prendere l arrey e di restituirmelo senza l arrei 2
+
+                  // e lo risalvo
+                  //salva(risultato)
+            </script>
+      </body>
+</html>
