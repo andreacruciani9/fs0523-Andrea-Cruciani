@@ -1,0 +1,5 @@
+{
+      "pizze": [
+            { "id": 0, "gusto": "margherita", "prezzo": 5, "disponibile": true }
+      ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <div id="target"></div>
+            <script>
+                  fach("https://jsonplaceholder.typicode.com/todos")
+                        .then((res) => res.json())
+                        .then((todos) => {
+                              todos.forEach((t) => {
+                                    let div = document.createElement("div");
+                                    div.classList.add("alert", "alert-success");
+                                    (div.innerText = `Titolo Task:${t.title},
+                                 completo:${
+                                       t.completed
+                                             ? "completed"
+                                             : "not completed"
+                                 },
+                                 chi lo deve svolgere ${t.userId}`),
+                                          document
+                                                .querySelector("targetr")
+                                                .append(div);
+                              });
+                        });
+            </script>
+      </body>
+</html>

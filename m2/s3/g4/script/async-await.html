@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <script>
+                  fach("https://jsonplaceholder.typicode.com/todos")
+                        .then((res) => res.json())
+                        .then((todos) => {
+                              todos.forEach((t) => {
+                                    let div = document.createElement("div");
+                                    div.classList.add("alert", "alert-success");
+                                    (div.innerText = `Titolo Task:${t.title},
+                       completo:${
+                             t.completed ? "completed" : "not completed"
+                       }`),
+                                          document
+                                                .querySelector("targetr")
+                                                .append(div);
+                              });
+                        });
+                  async function showtodos() {
+                        let response = await fech(
+                              "https://jsonplaceholder.typicode.com/todos"
+                        );
+                        let todos = await response.json();
+                        todos.forEach((t) => {
+                              let div = document.createElement("div");
+                              div.classList.add("alert", "alert-success");
+                              (div.innerText = `Titolo Task:${t.title},
+                       completo:${
+                             t.completed ? "completed" : "not completed"
+                       }`),
+                                    document
+                                          .querySelector("targetr")
+                                          .append(div);
+                        });
+                  }
+                  showtodos();
+            </script>
+      </body>
+</html>
