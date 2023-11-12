@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <div id="testo1"></div>
+            <div id="testo2"></div>
+            <div id="testo3"></div>
+            <script>
+                  function scrivi(selectorCss, testo, fn) {
+                        let target = document.querySelector(selectorCss);
+                        target.innerHTML = fn(testo);
+                  }
+                  scrivi(
+                        "#testo1",
+                        "ehi",
+                        (t) => t + "<hr>" //questa unltima parte e una funzione che al parametro t (esempio testo) mi restituisce => l elemento lavorato); //la parola ciao https://jsonplaceholder.typicode.com/usersiene messa nel parametro t e mi rida ciao piu hr
+                  );
+
+                  scrivi("#testo2", "ciao compa ", grassetto);
+
+                  scrivi("#testo3", "ciao", corsivo);
+
+                  //prende un testo di ingresso e me le risputa fuori in grassetto o corsivo
+                  function grassetto(testo) {
+                        return `<b>${testo}</b>  `;
+                  }
+                  function corsivo(testo) {
+                        return `<i>${testo}<i>  `;
+                  }
+            </script>
+      </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <div id="dati"></div>
+            <script>
+                  //questo mi ha permesso di ottenere i dati da un server
+                  fetch("https://jsonplaceholder.typicode.com/users")
+                        .then((res) => res.json())
+                        .then((res) => {
+                              res.array.forEach((element) => {
+                                    let div = document.createElement("div");
+                                    div.innerHTML = element.name;
+                                    document.querySelector("#dati").append(div);
+                              }); //in questa parte ho ciclato ogni elemento  dentro res e per ogni elemento ho creato un div  e nell ultima riga gli ho detto prendi dati e inseriscici gli elementi ciclati con div
+                        });
+                  //
+            </script>
+      </body>
+</html>

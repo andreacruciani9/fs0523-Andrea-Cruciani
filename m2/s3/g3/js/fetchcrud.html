@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <script>
+                  function getData() {
+                        fetch("https://jsonplaceholder.typicode.com/users")
+                              .then((res) => res.json()) //converto la risposta in json
+                              .then((persone) => {
+                                    //in questo caso persone sarà un arrey di oggetti(per verificaarlo basta visitare l'url di riferimento))
+
+                                    persone[0].name; //il nome della prima persona dell'arrey
+                              }); //utilizzo finamente i dati
+                  }
+                  function createData() {
+                        let newUser = [
+                              {
+                                    //pieno di oggetti}
+                              },
+                        ];
+                        fetch("https://jsonplaceholder.typicode.com/users", {
+                              method: "POST",
+                              headers: {
+                                    "Content-Type": "application/json",
+                              },
+                              body: JSON.stringify(newUser),
+                        })
+                              .then((res) => res.json())
+                              .then((res) => console.log(res));
+                  }
+                  //put va a sovrascrivere
+                  //pach lo corregge
+                  //delete pero senza body
+            </script>
+      </body>
+</html>

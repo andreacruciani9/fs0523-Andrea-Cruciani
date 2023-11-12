@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <body>
+            <script>
+                  let p = new Promise((successo, insuccesso) => {
+                        successo("Dato1"); //queste callback servono a sputare fuori un dato
+                        insuccesso("Dato2"); //è facoltativa
+                  }); //creo una promise che generera un oggetto pieno di promise  ha come orgomento principale una callback.una volta dato un risultato si stoppano
+
+                  //non ce modo di poter leggere una promise almenno che non uso then
+                  p.then((res) => console.log(res)); //cosi la leggo e vedo 'Dato 1'
+
+                  // caso di insuccesso
+                  let p2 = new Promise((successo, insuccesso) => {
+                        let psw = "passwordf";
+                        if (psw == "passwor") {
+                              successo("ok");
+                        } else {
+                              insuccesso("password errata");
+                        }
+                  });
+                  p2.then(
+                        (res) => console.log(res),
+                        (res) => console.log(res)
+                  );
+
+                  // simulazione d'attesa
+
+                  let p3 = new Promise((successo, insuccesso) => {
+                        setTimeout(() => {
+                              successo("eseguita");
+                        }, 5000); // lancera la funzione dopo 5 secondi
+                  });
+
+                  p3.then((res) => console.log(res));
+                  p3.then((res) => alert(res));
+
+                  let p4 = new Promise((successo, insuccesso) => {
+                        let psw = "passwordf";
+                        if (psw == "passwor") {
+                              successo("ok");
+                        } else {
+                              insuccesso("password errata");
+                        }
+                  });
+
+                  p4.then((res) => console.log(res));
+                  p4.catch((res) => new Error(res));
+            </script>
+      </body>
+</html>
