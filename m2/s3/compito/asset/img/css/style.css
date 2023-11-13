@@ -2,5 +2,5 @@
       height: 600px;
 }
 body {
-      background-image: image();
+      background-image: image(img/background.jpg);
 }
