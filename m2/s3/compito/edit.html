@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+            <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                  crossorigin="anonymous"
+            />
+      </head>
+      <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                        ><img
+                              src="./asset/img/OIP (1).jpg"
+                              width="100px"
+                              height="70px"
+                              class="navbar-brand"
+                        />
+                        <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarNav"
+                              aria-controls="navbarNav"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                        >
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                          <a
+                                                class="nav-link"
+                                                aria-current="page"
+                                                href="vediprodotti.html"
+                                                >Home Jp</a
+                                          >
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="crea.html"
+                                                >Crea il tuo jap-knife</a
+                                          >
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#"
+                                                >Modifica Jap-knife</a
+                                          >
+                                    </li>
+                                    <li class="nav-item">
+                                          <a
+                                                class="nav-link"
+                                                href="dettaglioprodotto.html"
+                                                >Lista Jap-knef</a
+                                          >
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+      <body>
+            <div class="container bg-dark">
+                  <h1 class="text-white">Modifica</h1>
+                  <form action="">
+                        <div class="row">
+                              <div class="col-lg-12 mt-3 mb-3">
+                                    <input
+                                          type="text"
+                                          id="name"
+                                          placeholder="nome-knife"
+                                    />
+                              </div>
+                              <div class="col-lg-12 mt-3 mb-3">
+                                    <input
+                                          type="text"
+                                          id="description"
+                                          placeholder="descrizione prodotto"
+                                    />
+                              </div>
+                              <div class="col-lg-12 mt-3 mb-3">
+                                    <input
+                                          type="text"
+                                          id="brand"
+                                          placeholder="il brand"
+                                    />
+                              </div>
+                              <div class="col-lg-12 mt-3 mb-3 bg-dark">
+                                    <input
+                                          type="text"
+                                          id="imageUrl"
+                                          placeholder="inserisci url"
+                                    />
+                                    <div class="col-lg-12 mt-3 mb-3 bg-dark">
+                                          <input
+                                                type="number"
+                                                id="price"
+                                                class="text"
+                                                placeholder="prezzo"
+                                          />
+                                    </div>
+                              </div>
+                        </div>
+                        <button class="modifica btn btn-primary">
+                              modifica
+                        </button>
+                  </form>
+            </div>
+            <script src="./script/editscript.js"></script>
+      </body>
+</html>

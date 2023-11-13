@@ -13,6 +13,7 @@
                   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
                   crossorigin="anonymous"
             />
+            <link rel="stylesheet" href="./asset/img/css/style.css" />
       </head>
       <body>
             <header>
@@ -22,7 +23,6 @@
                                     src="./asset/img/OIP (1).jpg"
                                     width="100px"
                                     height="70px"
-                                    class="navbar-brand"
                               />
                               <button
                                     class="navbar-toggler"
@@ -74,60 +74,31 @@
                         </div>
                   </nav>
             </header>
-            <div class="container"></div>
-            <h1>Back-Office</h1>
-            <div class="row">
-                  <div class="col-12 col-md-6 col-lg-3">
-                        <a href="crea.html" class="nuovo btn btn-dark"
-                              >crea nuovo jap-knife</a
-                        >
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                        <a href="vediprodotti.html" class="nuovo btn btn-dark"
-                              >Jap-knef</a
-                        >
-                  </div>
-
-                  <table class="table">
-                        <thead>
-                              <tr>
-                                    <td>#</td>
-                                    <td>name</td>
-                                    <td>description</td>
-                                    <td>brand</td>
-                                    <td>imageUrl</td>
-                                    <td>price</td>
-                                    <td>azioni</td>
-                              </tr>
-                        </thead>
-
-                        <tbody id="lista"></tbody>
-                  </table>
-                  <template>
-                        <tr>
-                              <td class="id"></td>
-                              <td class="name"></td>
-                              <td class="description"></td>
-                              <td class="brand"></td>
-                              <td class="imageUrl">
-                                    <img class="img" src="" alt="" />
-                              </td>
-                              <td class="prezzo"></td>
-                              <td class="azioni">
-                                    <a
-                                          class="modifica btn btn-warning"
-                                          href="edit.html"
-                                          >modifica</a
-                                    >
-                                    <button
-                                          class="elimina bg-danger text-white p-2"
-                                    >
-                                          elimina
-                                    </button>
-                              </td>
-                        </tr>
-                  </template>
+            <div class="container">
+                  <div class="row" id="target"></div>
             </div>
-            <script src="./script/dettaglio.js"></script>
+            <template
+                  ><div class="col-12 col-md-6 col-lg-3">
+                        <div class="card">
+                              <img
+                                    src="..."
+                                    class="img card-img-top"
+                                    alt="..."
+                              />
+                              <div class="card-body">
+                                    <h5 class="name card-title"></h5>
+                                    <p class="description card-text"></p>
+                                    <p class="brand card-text"></p>
+                                    <p class="prezzo card-text"></p>
+                                    <a
+                                          href="dettaglioprodotto.html"
+                                          class="btn btn-primary"
+                                          >Aggiungi alla lista</a
+                                    >
+                              </div>
+                        </div>
+                  </div></template
+            >
+            <script src="/script/script.js"></script>
       </body>
 </html>

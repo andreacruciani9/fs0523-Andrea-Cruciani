@@ -8,10 +8,18 @@ crea.addEventListener("click", (e) => {
 
       let name = document.querySelector("#name").value;
       let description = document.querySelector("#description").value;
-      let type = document.querySelector("#type").value;
-      let image = document.querySelector("#image").value;
+      let brand = document.querySelector("#brand").value;
+      let imageUrl = document.querySelector("#imageUrl").value;
       let price = document.querySelector("#price").value;
-
+      if (
+            name == "" ||
+            description == "" ||
+            brand == "" ||
+            imageUrl == "" ||
+            price == ""
+      ) {
+            alert("Please fill all the fields");
+      }
       /*let url = (urlString) => {
             try {
                   return Boolean(new URL(urlString));
@@ -20,37 +28,25 @@ crea.addEventListener("click", (e) => {
             }
       };*/
 
-      /*   if (
-            !name.value ||
-            !description.value ||
-            !type.value ||
-            !image.value ||
-            !price.value
-      ) {
-            alert("Please fill all the fields");
-      } else {*/
       let newknife = {
             name,
             description,
-            type,
-            image,
+            brand,
+            imageUrl,
             price,
       };
+
       fetch("https://striveschool-api.herokuapp.com/api/product/", {
             method: "POST",
             headers: {
-                  "content-type": "application/json",
-                  authorization: ` Bearer ${key}`,
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${key}`,
             },
-            body: JSON.stringify({
-                  name: "test",
-                  type: "test",
-                  description: "test",
-            }),
+            body: JSON.stringify(newknife),
       })
             .then((res) => res.json())
             .then((knife) => {
                   console.log(knife);
-                  // location.href = "/dettaglioprodotto.html";
+                  location.href = "/dettaglioprodotto.html";
             });
 });
