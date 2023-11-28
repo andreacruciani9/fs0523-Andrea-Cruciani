@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>title</th>
+      <th>text</th>
+      <th>visibile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of post">
+      <td>{{ post.id }}</td>
+      <td>{{ post.text }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ !post.valore }}</td>
+    </tr>
+  </tbody>
+</table>
