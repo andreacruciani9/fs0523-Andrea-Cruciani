@@ -1,0 +1,19 @@
+header {
+  margin: 0 auto;
+  max-width: 50%;
+  background-image: linear-gradient(#e9e200, #d29200, #a73904, #3c2829);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  a:hover {
+    color: gold;
+  }
+}

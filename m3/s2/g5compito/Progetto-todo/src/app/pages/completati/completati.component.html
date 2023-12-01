@@ -1,0 +1,9 @@
+<div *ngIf="!frasi.length" class="alert">caricamento in corso</div>
+
+<div *ngFor="let frasi of frasi">
+  <div class="card">
+    <p>{{ frasi.title }}</p>
+
+    <button (click)="delete(frasi.id)" class="btn">Elimina</button>
+  </div>
+</div>

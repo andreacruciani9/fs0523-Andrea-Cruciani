@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  .input {
+    max-width: 60%;
+  }
+  .aletr {
+    font-size: large;
+    margin: 0 auto;
+  }
+}
+.box {
+  text-align: center;
+  margin-top: 30px;
+}
