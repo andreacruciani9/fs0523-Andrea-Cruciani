@@ -15,6 +15,16 @@ export class FrasiService {
   getById(id: number): Promise<Frasi> {
     return fetch(this.apiUrl + `/${id}`).then((res) => res.json());
   }
+  getInctive(): Promise<Frasi> {
+    return fetch(this.apiUrl)
+      .then((res) => res.json())
+      .then((res) => {
+        return res.filter(
+          (res: { completed: boolean }) => res.completed === false
+        );
+      });
+  }
+
   Create(frasi: Partial<Frasi>): Promise<Frasi> {
     return fetch(this.apiUrl, {
       method: 'POST',

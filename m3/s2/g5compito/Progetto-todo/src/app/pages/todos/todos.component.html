@@ -2,6 +2,20 @@
   <div *ngIf="loading" class="alert">recupero task</div>
   <div class="alert" *ngIf="oldFrase">task recuperati</div>
 </div>
+<table>
+  <tr>
+    <td>task</td>
+    <td>stato</td>
+  </tr>
+  <tr *ngFor="let f of frasi">
+    <td>{{ f.title }}</td>
+    <td *ngIf="f.completed === false">{{ f.completed }}</td>
+    <td *ngIf="f.completed === true">{{ f.completed }}</td>
+    <td><button>elimina</button></td>
+    <td><a routerLink="/modifica"> modifica</a></td>
+  </tr>
+</table>
+
 <form class="flex">
   <input
     type="text"
@@ -10,6 +24,10 @@
     class="input"
     name="frase"
   />
+  <select name="active" [(ngModel)]="newfrase.completed" id="option">
+    <option value="1">active</option>
+    <option value="0">inactive</option>
+  </select>
   <button (click)="save()" class="btn">
     <svg
       xmlns="http://www.w3.org/2000/svg"

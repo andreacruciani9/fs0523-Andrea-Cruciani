@@ -12,13 +12,14 @@ import { Router } from '@angular/router';
 })
 export class TodosComponent {
   constructor(private frasiSVC: FrasiService, private router: Router) {}
-
-  newfrase: Partial<Frasi> = {
-    completed: true,
-  };
+  frasi: Frasi[] = [];
+  newfrase: Partial<Frasi> = {};
   oldFrase: Frasi | null = null;
 
   loading: boolean = false;
+  ngOnInit() {
+    this.frasiSVC.getAll().then((frasi) => (this.frasi = frasi));
+  }
 
   save() {
     this.loading = true;
@@ -32,3 +33,13 @@ export class TodosComponent {
     });
   }
 }
+
+/*function getActive() {
+  return fetch('http://localhost:3000/frasi')
+    .then((res) => res.json())
+.     .then((res) => {
+      return res.filter(
+        (res: { completed: boolean }) => res.completed === true
+      );
+    });
+}*/
