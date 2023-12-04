@@ -12,7 +12,6 @@ const routes: Routes = [
     path: 'frasi-completate',
     component: CompletatiComponent,
   },
-  { path: 'modifica', component: EditComponent },
 ];
 
 @NgModule({
