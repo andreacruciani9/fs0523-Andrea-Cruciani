@@ -1,6 +1,6 @@
 <div class="box">
   <div *ngIf="loading" class="alert">recupero task</div>
-  <div class="alert" *ngIf="oldFrase">task recuperati</div>
+  <div class="alert" *ngIf="loading">task recuperati</div>
 </div>
 <table>
   <tr>
@@ -8,12 +8,16 @@
     <td>stato</td>
   </tr>
   <tr *ngFor="let f of frasi">
-    <td>{{ f.title }}</td>
-    <td *ngIf="f.completed === false">{{ f.completed }}</td>
-    <td *ngIf="f.completed === true">{{ f.completed }}</td>
+    <td (click)="changeStato(f.id)">{{ f.title }}</td>
+    <td>{{ f.completed }}</td>
+
     <td><button (click)="delete(f.id)" class="btn">elimina</button></td>
     <td>
-      <button (click)="changeActive(f)" class="modifica">modifica</button>
+      <a
+        (click)="changeStato(f.id)"
+        routerLink="/frasi-completate"
+        class="modifica"
+        >attiva</a
       >
     </td>
   </tr>

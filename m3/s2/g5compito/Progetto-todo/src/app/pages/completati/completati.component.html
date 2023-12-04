@@ -2,7 +2,9 @@
 
 <div *ngFor="let frasi of frasi">
   <div class="card">
-    <p *ngIf="frasi.completed === true">{{ frasi.title }}</p>
+    <p (click)="ChangeStato(frasi.id)">{{ frasi.title }}</p>
+    <p>{{ frasi.completed }}</p>
+    <a (click)="ChangeStato(frasi.id)" routerLink="#" class="btn">disattiva</a>
     <button (click)="delete(frasi.id)" class="btn">Elimina</button>
   </div>
 </div>

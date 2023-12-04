@@ -9,9 +9,13 @@
       sans-serif;
   }
   .btn {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    padding: 3px;
     background-color: beige;
     border: none;
-    border-radius: 20%;
+    border-radius: 5px;
     font-size: medium;
   }
 }

@@ -24,6 +24,15 @@ export class FrasiService {
         );
       });
   }
+  getInactive() {
+    return fetch(this.apiUrl)
+      .then((res) => res.json())
+      .then((res) => {
+        return res.filter(
+          (res: { completed: boolean }) => res.completed === false
+        );
+      });
+  }
 
   Create(frasi: Partial<Frasi>): Promise<Frasi> {
     return fetch(this.apiUrl, {
@@ -33,7 +42,7 @@ export class FrasiService {
     }).then((res) => res.json());
   }
 
-  Update(frasi: Frasi): Promise<Frasi> {
+  Update(frasi: Partial<Frasi>): Promise<Frasi> {
     return fetch(this.apiUrl + `/${frasi.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -47,13 +56,10 @@ export class FrasiService {
       headers: { 'Content-Type': 'application/json' },
     }).then((res) => res.json());
   }
-  Change() {
-    return fetch(this.apiUrl)
-      .then((res) => res.json())
-      .then((res) => {
-        let index = res.findIndex((resarr: []) => res.id == res.id);
-        res.completed = !res.completed;
-        [].splice(index);
-      });
+  Change(id: number): Promise<Frasi> {
+    return this.getById(id).then((frasi) => {
+      const update = { ...frasi, completed: !frasi.completed };
+      return this.Update(update);
+    });
   }
 }

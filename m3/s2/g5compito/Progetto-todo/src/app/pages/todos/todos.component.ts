@@ -1,11 +1,11 @@
 import { Frasi } from './../../Models/frasi';
-import { Component } from '@angular/core';
+import { Component, Injectable, NgModule } from '@angular/core';
 import { ITodo } from '../../Modules/itodo';
 import { Title } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { FrasiService } from '../../frasi.service';
 import { Router } from '@angular/router';
-
+import { Inject } from '@angular/core';
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
@@ -16,10 +16,12 @@ export class TodosComponent {
   frasi: Frasi[] = [];
   newfrase: Partial<Frasi> = {};
   oldFrase: Frasi | null = null;
-
+  loading2: boolean = false;
   loading: boolean = false;
   ngOnInit() {
-    this.frasiSVC.getAll().then((frasi) => (this.frasi = frasi));
+    this.frasiSVC.getInactive().then((frasi) => {
+      (this.frasi = frasi), (this.loading2 = false);
+    });
   }
 
   save() {
@@ -42,21 +44,13 @@ export class TodosComponent {
     });
   }
   ngOninit() {
-    this.Update();
-  }
-  Update() {
     this.frasiSVC.getActive().then((frasi: Frasi[]) => {
       this.frasi = frasi;
     });
   }
-  changeActive(frasi: ITodo) {
-    this.frasiSVC.getAll().then(() => {
-      let index = this.frasi.findIndex((f) => f.id == frasi.id);
-      frasi.completed = !frasi.completed;
-      this.frasi.splice(index, 1, frasi);
 
-      return frasi.completed;
-    });
+  changeStato(id: number) {
+    return this.frasiSVC.Change(id);
   }
 }
 

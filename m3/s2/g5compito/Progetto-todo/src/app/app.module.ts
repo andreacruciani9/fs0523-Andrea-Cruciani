@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './pages/todos/todos.component';
 import { CompletatiComponent } from './pages/completati/completati.component';
-import { EditComponent } from './pages/edit/edit.component';
+
 import { HeaderComponent } from './component/header/header.component';
 import { FormsModule } from '@angular/forms';
 
@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     TodosComponent,
     CompletatiComponent,
-    EditComponent,
+
     HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],

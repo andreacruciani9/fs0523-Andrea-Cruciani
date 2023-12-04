@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TodosComponent } from './pages/todos/todos.component';
 import { CompletatiComponent } from './pages/completati/completati.component';
-import { EditComponent } from './pages/edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', component: TodosComponent },
