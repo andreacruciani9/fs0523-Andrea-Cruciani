@@ -15,12 +15,12 @@ export class FrasiService {
   getById(id: number): Promise<Frasi> {
     return fetch(this.apiUrl + `/${id}`).then((res) => res.json());
   }
-  getInctive(): Promise<Frasi> {
+  getActive() {
     return fetch(this.apiUrl)
       .then((res) => res.json())
       .then((res) => {
         return res.filter(
-          (res: { completed: boolean }) => res.completed === false
+          (res: { completed: boolean }) => res.completed === true
         );
       });
   }
@@ -46,5 +46,14 @@ export class FrasiService {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
     }).then((res) => res.json());
+  }
+  Change() {
+    return fetch(this.apiUrl)
+      .then((res) => res.json())
+      .then((res) => {
+        let index = res.findIndex((resarr: []) => res.id == res.id);
+        res.completed = !res.completed;
+        [].splice(index);
+      });
   }
 }

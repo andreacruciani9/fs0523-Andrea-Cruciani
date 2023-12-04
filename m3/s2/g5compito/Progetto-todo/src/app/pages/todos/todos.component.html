@@ -11,8 +11,11 @@
     <td>{{ f.title }}</td>
     <td *ngIf="f.completed === false">{{ f.completed }}</td>
     <td *ngIf="f.completed === true">{{ f.completed }}</td>
-    <td><button>elimina</button></td>
-    <td><a routerLink="/modifica"> modifica</a></td>
+    <td><button (click)="delete(f.id)" class="btn">elimina</button></td>
+    <td>
+      <button (click)="changeActive(f)" class="modifica">modifica</button>
+      >
+    </td>
   </tr>
 </table>
 

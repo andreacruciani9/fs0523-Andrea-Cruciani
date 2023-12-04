@@ -2,8 +2,7 @@
 
 <div *ngFor="let frasi of frasi">
   <div class="card">
-    <p>{{ frasi.title }}</p>
-
+    <p *ngIf="frasi.completed === true">{{ frasi.title }}</p>
     <button (click)="delete(frasi.id)" class="btn">Elimina</button>
   </div>
 </div>

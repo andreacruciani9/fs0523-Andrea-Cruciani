@@ -17,3 +17,35 @@
   text-align: center;
   margin-top: 30px;
 }
+table {
+  margin: 0 auto;
+  width: 60%;
+
+  td {
+    padding: 8px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  tr:hover {
+    background-color: darkgoldenrod;
+  }
+  .btn {
+    background-color: tan;
+    border: none;
+    box-shadow: 3px 3px;
+    border-radius: 5px;
+    width: auto;
+    font-size: large;
+  }
+  .modifica {
+    text-decoration: none;
+    color: black;
+    background-color: tan;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 2px;
+    box-shadow: 3px 3px;
+    border-radius: 5px;
+  }
+}

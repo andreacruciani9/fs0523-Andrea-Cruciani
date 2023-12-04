@@ -1,3 +1,4 @@
+import { TodosComponent } from './../todos/todos.component';
 import { FrasiService } from '../../frasi.service';
 import { Frasi } from './../../Models/frasi';
 import { Component } from '@angular/core';
@@ -11,7 +12,8 @@ export class CompletatiComponent {
   frasi: Frasi[] = [];
   constructor(private frasiSvc: FrasiService) {}
   ngOnInit() {
-    this.frasiSvc.getAll().then((frasi) => (this.frasi = frasi));
+    this.frasiSvc.getActive().then((frasi) => (this.frasi = frasi));
+    this.frasi.filter((f) => f.completed);
   }
 
   delete(id: number) {

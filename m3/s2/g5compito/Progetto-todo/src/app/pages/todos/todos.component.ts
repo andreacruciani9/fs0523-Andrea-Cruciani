@@ -1,7 +1,8 @@
+import { Frasi } from './../../Models/frasi';
 import { Component } from '@angular/core';
 import { ITodo } from '../../Modules/itodo';
 import { Title } from '@angular/platform-browser';
-import { Frasi } from '../../Models/frasi';
+
 import { FrasiService } from '../../frasi.service';
 import { Router } from '@angular/router';
 
@@ -32,7 +33,34 @@ export class TodosComponent {
       }, 3000);
     });
   }
+  delete(id: number) {
+    if (!id) return;
+
+    this.frasiSVC.Delete(id).then((res) => {
+      this.frasi = this.frasi.filter((frasi) => frasi.id != id);
+      alert(`frase ${this.frasi} eliminata`);
+    });
+  }
+  ngOninit() {
+    this.Update();
+  }
+  Update() {
+    this.frasiSVC.getActive().then((frasi: Frasi[]) => {
+      this.frasi = frasi;
+    });
+  }
+  changeActive(frasi: ITodo) {
+    this.frasiSVC.getAll().then(() => {
+      let index = this.frasi.findIndex((f) => f.id == frasi.id);
+      frasi.completed = !frasi.completed;
+      this.frasi.splice(index, 1, frasi);
+
+      return frasi.completed;
+    });
+  }
 }
+
+//aggiustare la visualizzazione nel falso
 
 /*function getActive() {
   return fetch('http://localhost:3000/frasi')
