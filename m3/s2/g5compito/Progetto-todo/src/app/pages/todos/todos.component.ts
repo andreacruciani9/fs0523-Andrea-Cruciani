@@ -28,11 +28,9 @@ export class TodosComponent {
     this.loading = true;
     this.newfrase.completed = Boolean(Number(this.newfrase.completed));
     this.frasiSVC.Create(this.newfrase).then((res) => {
+      this.frasi.push(res);
       this.loading = false;
       this.oldFrase = res;
-      setTimeout(() => {
-        this.router.navigate(['/frasi-completate']);
-      }, 3000);
     });
   }
   delete(id: number) {
