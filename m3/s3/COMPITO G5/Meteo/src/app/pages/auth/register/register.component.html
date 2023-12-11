@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Registrati</h2>
+  <form #f="ngForm" class="form">
+    <input
+      [(ngModel)]="registerData.name"
+      type="text"
+      #nome="ngModel"
+      required
+      class="form-control"
+      name="name"
+      placeholder="il tuo nome"
+      class="form-control"
+    />
+    <div *ngIf="nome.invalid && nome.dirty" class="alert alert-warning">
+      Devi inserire il nome
+    </div>
+    <input
+      [(ngModel)]="registerData.email"
+      type="email"
+      #email="ngModel"
+      required
+      class="form-control"
+      name="email"
+      placeholder="la tua email"
+    />
+    <div *ngIf="email.invalid && email.dirty" class="alert alert-warning">
+      Devi inserire l'email
+    </div>
+    <input
+      [(ngModel)]="registerData.password"
+      type="password"
+      #password="ngModel"
+      required=""
+      class="form-control"
+      name="password"
+      placeholder="inserisci la tua password"
+    />
+    <div *ngIf="password.invalid && password.dirty" class="alert alert-warning">
+      Devi inserire la password
+    </div>
+    <button [disabled]="f.invalid" (click)="save()" class="btn">Salva</button>
+    <div *ngIf="f.invalid && f.dirty" class="alert alert-warning">
+      campi mancanti
+    </div>
+  </form>
+</div>

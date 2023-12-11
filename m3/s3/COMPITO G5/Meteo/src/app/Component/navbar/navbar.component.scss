@@ -1,0 +1,24 @@
+nav {
+  background-image: linear-gradient(
+    162deg,
+    rgba(2, 0, 36, 1) 14%,
+    rgba(9, 9, 121, 1) 59%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  a {
+    color: white;
+  }
+  button {
+    color: white;
+  }
+  #icon {
+    color: white;
+  }
+  .logo {
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

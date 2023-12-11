@@ -1,0 +1,34 @@
+.container {
+  background-image: linear-gradient(
+    162deg,
+    rgba(2, 0, 36, 1) 14%,
+    rgba(9, 9, 121, 1) 59%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100%;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 50px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  input {
+    border-color: blue;
+    color: black;
+  }
+  .btn {
+    color: white;
+    background-color: rgba(255, 255, 0, 0.43);
+    width: 50%;
+  }
+  input.ng-dirty.ng-invalid {
+    border: 4px solid brown;
+  }
+}

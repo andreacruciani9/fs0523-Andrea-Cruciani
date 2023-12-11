@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Accedi</h2>
+  <form #f="ngForm" class="form">
+    <input
+      [(ngModel)]="loginData.email"
+      type="email"
+      required
+      #email="ngModel"
+      class="form-control"
+      name="email"
+      placeholder="la tua email"
+    />
+    <div *ngIf="email.invalid && email.dirty" class="alert alert-warning">
+      Devi inserire l'email
+    </div>
+    <input
+      ngModel
+      [(ngModel)]="loginData.password"
+      type="password"
+      required
+      #password="ngModel"
+      class="form-control"
+      name="password"
+      placeholder="inserisci la tua password"
+    />
+    <div *ngIf="password.invalid && password.dirty" class="alert alert-warning">
+      Devi inserire la password
+    </div>
+    <button [disabled]="f.invalid" (click)="save()" class="btn">Accedi</button>
+    <div *ngIf="f.invalid && f.dirty" class="alert alert-warning">
+      campi mancanti
+    </div>
+  </form>
+</div>
