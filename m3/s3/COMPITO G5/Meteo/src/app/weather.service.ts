@@ -13,12 +13,12 @@ export class WeatherService {
 
   constructor(private http: HttpClient) {}
 
-  getAll(city: string): Observable<ICordinate> {
+  getAll(city: string): Observable<any> {
     const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city},{state code},{country code}&limit={limit}&appid=${this.apiKey}`;
-    return this.http.get<ICordinate>(apiUrl);
+    return this.http.get(apiUrl);
   }
 
-  getCity(city: string): Observable<iNomeCitta> {
+  getCity(city: string): Observable<any> {
     const apiUrl = ` api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${this.apiKey}`;
     return this.http.get<iNomeCitta>(apiUrl);
   }

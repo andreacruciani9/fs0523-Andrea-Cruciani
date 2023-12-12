@@ -2,7 +2,7 @@ import { ICordinate } from './../../module/i-cordinate';
 import { Component } from '@angular/core';
 import { WeatherService } from '../../weather.service';
 import { iNomeCitta } from '../../module/i-nome-citta';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, map, switchMap, tap } from 'rxjs';
 import { ICordinate } from '../../module/i-cordinate';
 
 @Component({
@@ -53,10 +53,20 @@ export class DashboardComponent {
     lat: 0,
     lon: 0,
   };
-  cordinate!: ICordinate;
+  cordinate: ICordinate={
+    name: '',
+    lat: 0,
+    lon: 0,
+    country: '',
+    state: ''
+  };
   save(data: string): Observable<iNomeCitta> {
-    return this.weatherSvc.getAll(data).pipe((data) => {
-      console.log(data);
+    return this.weatherSvc.getAll(data).pipe(switchMap(data) => {
+      this.cordinate=data,
+  return this.weatherSvc.getCity(data.value)
     });
   }
 }
+
+
+
