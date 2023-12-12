@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "email": "andrea.cruciani94@gmail.com",
-      "password": "$2a$10$AZjj.KJiyxvLyOYYHAFMGO93.XFuWzbOY9HcKFW9BRj9SYRMjTlQG",
-      "name": "Andrea",
-      "id": 1
-    },
-    {
       "email": "andrea.luciani94@gmail.com",
       "password": "$2a$10$ixDDZhu9ScJ8Y/NS4ygHl.g/irwxk8SdpQqEbfxXbjNInTJfkz/ba",
       "name": "Andrea",
@@ -23,6 +17,12 @@
       "password": "$2a$10$7faqYmlZ6Jji7ih1jP9JCepKvDGgYHDasQ1xp51/PEl4dBGS.2wt.",
       "name": "Andrea",
       "id": 4
+    },
+    {
+      "email": "andrea.cruciani94@gmail.com",
+      "password": "$2a$10$reY.jYhVulvnsp2UbziBTuNAFlO5ZHIiDbw7Q7lUWqYBo/TlVtFRK",
+      "name": "Andrea",
+      "id": 5
     }
   ]
 }
