@@ -2,8 +2,13 @@
   <h1>Benvenuto</h1>
   <p>Quale citta stai crecando?</p>
   <form>
-    <input type="text" name="nome" placeholder="inserisci citta" />
-    <button type="button">Cerca</button>
+    <input
+      type="text"
+      name="nome"
+      placeholder="inserisci citta"
+      ([ngModel])="(cordinate.name)"
+    />
+    <button (click)="save(cordinate)" type="button">Cerca</button>
   </form>
 </div>
 <router-outlet></router-outlet>

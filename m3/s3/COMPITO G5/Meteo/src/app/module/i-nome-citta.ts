@@ -2,19 +2,35 @@ export interface iNomeCitta {
   cod: string;
   message: number;
   cnt: number;
-  list: [];
-  city: string;
+  list: IList[];
+  city: ICity;
+}
 
+export interface IList {
   dt: number;
-  main: {};
-  weather: [];
-  clouds: string;
-  wind: string;
+  main: IMain;
+  weather: IWeather[];
+  clouds: IClouds;
+  wind: IWind;
   visibility: number;
   pop: number;
-
+  rain?: IRain;
+  sys: ISys;
   dt_txt: string;
+}
 
+export interface ICity {
+  id: number;
+  name: string;
+  coord: ICoord;
+  country: string;
+  population: number;
+  timezone: number;
+  sunrise: number;
+  sunset: number;
+}
+
+interface IMain {
   temp: number;
   feels_like: number;
   temp_min: number;
@@ -24,29 +40,34 @@ export interface iNomeCitta {
   grnd_level: number;
   humidity: number;
   temp_kf: number;
+}
 
+interface IWeather {
+  id: number;
+  main: string;
   description: string;
   icon: string;
+}
 
+interface IClouds {
   all: number;
+}
 
+interface IWind {
   speed: number;
   deg: number;
   gust: number;
+}
 
+interface IRain {
   '3h': number;
+}
 
+interface ISys {
   pod: string;
+}
 
-  id: number;
-  name: string;
-
-  country: string;
-  population: number;
-  timezone: number;
-  sunrise: number;
-  sunset: number;
-
+interface ICoord {
   lat: number;
   lon: number;
 }
