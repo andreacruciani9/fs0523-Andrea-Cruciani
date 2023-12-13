@@ -2,13 +2,23 @@
   <h1>Benvenuto</h1>
   <p>Quale citta stai crecando?</p>
   <form>
-    <input
-      type="text"
-      name="nome"
-      placeholder="inserisci citta"
-      ([ngModel])="(cordinate.name)"
-    />
-    <button (click)="save(cordinate)" type="button">Cerca</button>
+    <input type="text" name="nome" placeholder="inserisci citta" [(ngModel)]="nome" />
+    <button (click)="save(nome)" type="button">Cerca</button>
+    <div *ngIf="searchOk">
+      <div *ngFor=" let city of NameTrovato" id="list">
+        <button (click)='getCity(city)'>{{city.local_names?.it? city.local_names?.it:city.name}}</button>
+
+      </div>
+
+    </div>
   </form>
+  <div *ngIf="NameTrovato"><app-citta-selezionata [loveArr]="userlovearr"></app-citta-selezionata></div>
 </div>
+<div id="Container3" class="d-flex flex-row flex-wrap justify-content-around m-5 ">
+  <div class="container2 text-white border border-primary me-lg-2" *ngFor="let time of tempo">
+    <app-logo [weather]="time"></app-logo>
+  </div>
+</div>
+
+<app-preferiti></app-preferiti>
 <router-outlet></router-outlet>

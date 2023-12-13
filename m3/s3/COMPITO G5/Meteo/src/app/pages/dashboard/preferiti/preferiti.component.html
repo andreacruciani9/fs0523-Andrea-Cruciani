@@ -1,0 +1,19 @@
+<div id="user-box" class="btn-group dropup" *ngIf="logged">
+  <span *ngIf="!show" id="fav-length"
+    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">{{userLovearr?.length}}</span>
+
+  <button id="user-button" type="button" (click)="show=!show" class="btn btn-secondary dropdown-toggle"
+    data-bs-toggle="dropdown" aria-expanded="false">
+
+  </button>
+
+  <div [ngClass]="{show: show}" class="dropdown-menu">
+    <div class="d-flex mt-2" *ngFor="let f of userLovearr">
+      <button class="dropdown-item pref-cities" (click)="search(geolocal)">{{geolocal.geodataCity?.local_names?.it?
+        geolocal.geodataCity?.local_names?.it:geolocal.geodataCity?.name}}</button>
+      <button class="erase-pref" (click)="remuvelove(geolocal.id)">
+
+      </button>
+    </div>
+  </div>
+</div>
